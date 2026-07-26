@@ -1,0 +1,32 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# IDE files
+.classpath
+.project
+.settings/
+.idea/
+*.iml
+.vscode/
+.metadata/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build output
+target/
+bin/
+
+# Maven
+*.jar
+!**/lib/*.jar
+
+# Gemini
+.gemini/
+
+# Agents
+.agents/
