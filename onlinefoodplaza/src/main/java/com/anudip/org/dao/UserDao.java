@@ -11,5 +11,6 @@ public interface UserDao {
 	boolean deleteUser(String email);
 	List<UserDTO> showAllUsers();
 	UserDTO searchUser(String email);
-
+	boolean validateUser(String email, String password);
+	boolean changePassword(String email, String newPassword);
 }

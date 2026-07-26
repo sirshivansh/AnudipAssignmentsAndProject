@@ -124,4 +124,36 @@ public class UserDaoImpl implements UserDao {
 		return null;
 	}
 
+	@Override
+	public boolean validateUser(String email, String password) {
+		try {
+			con = DbConnection.makeConnection();
+			ps = con.prepareStatement("select * from tbl_user where email=? and password=?");
+			ps.setString(1, email);
+			ps.setString(2, password);
+			rs = ps.executeQuery();
+			if (rs.next()) {
+				return true;
+			}
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
+	@Override
+	public boolean changePassword(String email, String newPassword) {
+		try {
+			con = DbConnection.makeConnection();
+			ps = con.prepareStatement("update tbl_user set password=? where email=?");
+			ps.setString(1, newPassword);
+			ps.setString(2, email);
+			int rows = ps.executeUpdate();
+			return rows > 0;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return false;
+	}
+
 }

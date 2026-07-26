@@ -40,4 +40,14 @@ public class UserServiceImpl implements UserService {
 		return userDao.searchUser(email);
 	}
 
+	@Override
+	public boolean validateUser(String email, String password) {
+		return userDao.validateUser(email, password);
+	}
+
+	@Override
+	public boolean changePassword(String email, String newPassword) {
+		return userDao.changePassword(email, newPassword);
+	}
+
 }
