@@ -9,7 +9,6 @@ A collection of Java assignments, DSA practice sessions, and full-stack projects
 ```
 AnudipAssignmentsAndProject/
 ├── DSA/                        # Data Structures & Algorithms (Java)
-├── JavaDS/                     # Java Data Structures Practice
 ├── onlinefoodplaza/            # Online Food Plaza (Console App)
 └── smart_library_system/       # Smart Library System (Final Project)
 ```
@@ -34,17 +33,7 @@ Java assignments covering core DSA and collections concepts.
 
 ---
 
-### 2. JavaDS — Java Data Structures
-
-Additional practice on Generics, Iterators, and Concurrent Collections.
-
-- **Fail-Safe vs Fail-Fast** iterators with `ConcurrentHashMap`
-- **Generics** with custom `MyDataType<T>`
-- **Iterator, ListIterator, Enumeration** traversal patterns
-
----
-
-### 3. Online Food Plaza
+### 2. Online Food Plaza
 
 A console-based food ordering system built with **Java + JDBC + MySQL**.
 
@@ -68,7 +57,7 @@ A console-based food ordering system built with **Java + JDBC + MySQL**.
 
 ---
 
-### 4. Smart Library System ⭐ *(Final Project)*
+### 3. Smart Library System ⭐ *(Final Project)*
 
 A full-featured console-based library management system with advanced features.
 
