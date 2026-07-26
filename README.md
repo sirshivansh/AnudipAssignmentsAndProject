@@ -113,4 +113,4 @@ A full-featured console-based library management system with advanced features.
 
 ## 👤 Author
 
-**Shivansh** — Anudip Foundation (Batch D6594)
+**Shivansh Mishra** (AF05068519) — Anudip Foundation (Batch D6594)
